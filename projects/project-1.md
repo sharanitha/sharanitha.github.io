@@ -12,6 +12,6 @@ labels:
 summary: My team developed a LED Cube with a Raspberry Pi that switches through a series of light patterns.
 ---
 
- <img class="ui image" src="../images/raspi2.jpg">
+ <img src="../images/raspi.jpg">
 
 Our team developed a LED Cube made out of a Raspberry Pi board and LED lights. The lights were sautered together to form a 4x4 cube. For this project, I was in charge of sautering the piece together and developing the Python code that would run the series of patterns. 
