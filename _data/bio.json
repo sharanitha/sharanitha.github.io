@@ -100,7 +100,8 @@
       "summary": "NSW TAS Software Engineering R&D Intern",
       "highlights": [
         "Update and clean up legacy code",
-        "Find improvements to boost the efficiency of the automation test suite"
+        "Find improvements to boost the efficiency of the automation test suite",
+        "Helped develop a stress testing container with Kubernetes and Docker"
       ]
     },
     {
