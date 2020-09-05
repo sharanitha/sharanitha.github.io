@@ -12,7 +12,7 @@ labels:
 summary: My team developed a LED Cube with a Raspberry Pi that switches through a series of light patterns.
 ---
 
-<div class="ui small rounded images">
+<div class="ui medium rounded images">
   <img class="ui image" src="../images/raspi2.jpg">
 </div>
 
