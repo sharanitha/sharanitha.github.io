@@ -269,23 +269,32 @@ header.major {
   }
 
 .navbar-nav {
-    padding-left: 100px;
+    display: flex;
+    flex: 1;
+    justify-content: right !important;
+    padding-right: 1em;
 }
+
+.nav-item.nav-link {
+    margin-left: 21px;
+}
+
+.navbar a{
+    font-size: 12px !important;
+    color: #fff !important;
+    letter-spacing: 5px !important;
+}
+
 .active {
     color: #f4741e !important;
     background-color: rgba(255, 255, 255, 0.295);
 }
 
 .navbar .navbar-brand {
-    font-size: 16px !important;
-    font-weight: 200;
+    font-size: 17px !important;
+    letter-spacing: 5px !important;
     color: #fff !important;
-    padding-left: 100px;
-}
-
-  .navbar a{
-    font-size: 12px !important;
-    color: #fff !important;
+    padding-left: 3em;
 }
 
   .navbar-nav a:hover, .navbar-nav .active a {
