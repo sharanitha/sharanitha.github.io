@@ -3,10 +3,10 @@ body {
     line-height: 1.8;
     color: #818181;
 	background-color: #935d8c;
-		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
-		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
+		background-image: url("images/overlay.png"), -moz-linear-gradient(45deg, #ff9160 15%, rgba(77,77,159,1) 52%, rgba(53,123,175,1) 100%);
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #ff9160 15%, rgba(77,77,159,1) 52%, rgba(53,123,175,1) 100%);
+		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #ff9160 15%, rgba(77,77,159,1) 52%, rgba(53,123,175,1) 100%);
+		background-image: url("images/overlay.png"), linear-gradient(45deg, #ff9160, rgba(77,77,159,1) 52%, #2379b9 100%);
   }
   h2 {
     font-size: 24px;
@@ -23,7 +23,7 @@ body {
     margin-bottom: 30px;
   }
   .col-sm-4.lists{
-	  padding: 10px 10px 10px 10px;
+	  padding: 20px 10px 10px 10px;
 	  border-style: solid;
 	  border-width: 2px;
 	  border-radius: 10px;
@@ -168,9 +168,9 @@ body {
 	display: -ms-flexbox;
 	display:         flex;
   }
-  .navbar {
-    margin-bottom: 0;
-    background-color: #f4511e;
+    .navbar {
+    margin-bottom: 20em;
+    background-color: transparent;
     z-index: 9999;
     border: 0;
     font-size: 12px !important;
@@ -190,6 +190,23 @@ body {
     border-color: transparent;
     color: #fff !important;
   }
+
+  .navbar-fixed-top.scrolled {
+  background-color: rgb(255, 255, 255) !important;
+  transition: background-color 200ms linear;
+}
+.navbar-fixed-top.scrolled li a{
+  color: rgb(0, 0, 0) !important;
+  transition: background-color 200ms linear;
+}
+.navbar-fixed-top.scrolled a{
+  color: rgb(0, 0, 0) !important;
+  transition: background-color 200ms linear;
+}
+.navbar-fixed-top.scrolled li a:hover, .navbar-nav li.active a {
+    color: #f4511e !important;
+    background-color: #fff !important;
+}
   footer .glyphicon {
     font-size: 20px;
     margin-bottom: 20px;
@@ -413,10 +430,10 @@ header.major h2:after {
 /* MAIN */
 #main header.major h2:after {
 	background-color: #dddddd;
-	background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	background-image: -moz-linear-gradient(90deg, #ff9160, rgba(77,77,159,1), rgba(53,123,175,1));
+	background-image: -webkit-linear-gradient(90deg, #ff9160, rgba(77,77,159,1), rgba(53,123,175,1));
+	background-image: -ms-linear-gradient(90deg, #ff9160, rgba(77,77,159,1), rgba(53,123,175,1));
+	background-image: linear-gradient(90deg, #f4511e 10%, rgba(77,77,159,1) 50%,#3e92d0 83%);
 }
 
 #main > .main {
@@ -651,3 +668,46 @@ ul.icons {
       font-size: 150px;
     }
   }
+
+/* Fade In Effect */
+.test {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}

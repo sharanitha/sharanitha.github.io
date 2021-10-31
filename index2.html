@@ -5,13 +5,14 @@
   <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="assets/css/main2.css" />
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/71e2d53e10.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="assets/css/main2.css" />
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <script>
       $(function () {
@@ -103,48 +104,6 @@
     background-color: #f4511e;
     color: #fff;
   }
-  .navbar {
-    margin-bottom: 20em;
-    background-color: transparent;
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-
-  .navbar-fixed-top.scrolled {
-  background-color: rgb(255, 255, 255) !important;
-  transition: background-color 200ms linear;
-}
-.navbar-fixed-top.scrolled li a{
-  color: rgb(0, 0, 0) !important;
-  transition: background-color 200ms linear;
-}
-.navbar-fixed-top.scrolled a{
-  color: rgb(0, 0, 0) !important;
-  transition: background-color 200ms linear;
-}
-.navbar-fixed-top.scrolled li a:hover, .navbar-nav li.active a {
-    color: #f4511e !important;
-    background-color: #fff !important;
-}
-
-
-
   
   footer .glyphicon {
     font-size: 20px;
@@ -169,7 +128,7 @@
   
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="is-preload">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -220,7 +179,7 @@
                     </ul>
                 </div>
                 <span id="header" class="alt">
-                    <span class="image slideanim"><img src="images/propic.jpg" alt="" /></span>
+                    <span class="image"><img src="images/propic.jpg" alt="" /></span>
                 </span>
                 
             </div>
@@ -240,7 +199,7 @@
                     <h3>Frontend</h3>
                     <ul class="fa-ul">
                         <li><span class="fa-li"><i class="fas fa-check"></i></span>React/Redux</li>
-                        <li><span class="fa-li"><i class="fas fa-check"></i></span>Javascript</li>
+                        <li><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript</li>
                         <li><span class="fa-li"><i class="fas fa-check"></i></span>Node.js</li>
                         <li><span class="fa-li"><i class="fas fa-check"></i></span>HTML/CSS</li>
                     </ul>
