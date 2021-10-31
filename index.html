@@ -1,186 +1,220 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Stellar by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	
-	<body class="is-preload">
-		<!-- Nav -->
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-			  <div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>
-				  <span class="icon-bar"></span>                        
-				</button>
-				<a class="navbar-brand" href="/">Sharanitha Sampath</a>
-			  </div>
-			  <div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav navbar-right">
-				  <li><a href="#intro">ABOUT</a></li>
-				  <li><a href="#projects">PROJECTS</a></li>
-				  <li><a href="#resume">RESUME</a></li>
-				  <li><a href="#contact">CONTACT</a></li>
-				</ul>
-			  </div>
-			</div>
-		  </nav>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+    <title>Sharanitha's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="https://kit.fontawesome.com/71e2d53e10.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+</head>
 
-				<!-- Main -->
-					<div id="main">
+<body data-spy="scroll" data-target=".navbar" data-offset="60" class="is-preload">
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Hello, I'm Sharanitha</h2>
-										</header>
-										<p>Sed lorem ipsum dolor sit amet nullam consequat feugiat consequat magna
-										adipiscing magna etiam amet veroeros. Lorem ipsum dolor tempus sit cursus.
-										Tempus nisl et nullam lorem ipsum dolor sit amet aliquam.</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span id="header" class="alt">
-										<span class="image"><img src="images/propic.jpg" alt="" /></span>
-									</span>
-									
-								</div>
-							</section>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-default fixed-top navbar-expand-lg">
+        <a class="navbar-brand" href="#">Sharanitha Sampath</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#about">ABOUT</a>
+                <a class="nav-item nav-link" href="#skills">SKILLS</a>
+                <a class="nav-item nav-link" href="#projects">PROJECTS</a>
+                <a class="nav-item nav-link" href="#resume">RESUME</a>
+            </div>
+        </div>
+    </nav>
 
-						<!-- First Section -->
-							<section id="about" class="main special">
-								<header class="major">
-									<h2>Magna veroeros</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-gem"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+    <!-- MAIN CONTENT -->
+    <div id="wrapper">
 
-						<!-- Second Section -->
-							<section id="projects" class="main special">
-								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+        <!-- INTRO -->
+        <section id="about" class="first">
+            <div class="row flex-md-row-reverse">
+                <div class="col-md-4 col-md-push-4 text-center">
+                    <img src="images/propic.jpg" alt="" class="image img-responsive fadein" width="100%" />
+                    <br>
+                    <a href="https://www.linkedin.com/in/sharanitha-sampath/" class="resumeicon fab fa-linkedin fa-3x"
+                        style="padding-right: 10px; padding-left: 10px;"></a>
+                    <a href="https://github.com/sharanitha" class="resumeicon fab fa-github fa-3x"></a>
+                </div>
+                <div class="col-md-8 col-md-pull-8">
+                    <header class="major">
+                        <h2>Hello, I'm Sharanitha</h2>
+                    </header>
 
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+                    <p>
+                        I'm a full-stack web developer and programmer with a B.S. in Computer Science.
+                        Currently, I work as software engineer at Nokia where I have gained experience coding in C++ and Python. 
+                        <br>
+                        <br>
+                        I have 2+ years of experience building rich and modern web applications as well as apps in Java and C#.
+                        Through various projects I've become fluent in different web development frameworks such as MERN stack.
+                        <br><br>
+                        Feel free to check out my apps and projects with links to my github repos in the 'Projects' section of this page.
 
-					</div>
+                        <h4>What I'm working on:</h4>
+                        I'm improving on my React and relational database skills. I am also taking UI/UX courses to further myself as a web developer.
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Etiam feugiat</h2>
-							<dl class="alt">
-								<dt>Address</dt>
-								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
-								<dt>Phone</dt>
-								<dd>(000) 000-0000 x 0000</dd>
-								<dt>Email</dt>
-								<dd><a href="#">information@untitled.tld</a></dd>
-							</dl>
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							</ul>
-						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-			</div>
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="main special">
+            <header class="major">
+                <h2>Skills Overview</h2>
+            </header>
+            <h4 class="skills">
+                Below is a quick overview of my main technical skill sets and tools I use on various projects.
+            </h4>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <!-- Frontend Skills List -->
+            <div class="row skills slideanim">
+                <div class="col-lg-4 skills">
+                    <span class="fa-stack color1 fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>Frontend</h3>
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>React/Redux</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>JavaScript</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Node.js</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>HTML/CSS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-	</body>
+                <!-- Backend Skills List -->
+                <div class="col-lg-4 skills">
+                    <span class="fa-stack color2 fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>Backend</h3>
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>PHP</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>NoSQL/MongoDB</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>SQL</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Express.js</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other Skills List -->
+                <div class="col-lg-4 skills nobreak">
+                    <span class="fa-stack color3 fa-2x">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h3>Other/Languages</h3>
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex justify-content-center">
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>C++ / C#</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Java</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Python</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Git</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Docker</li>
+                                    <li><span class="fa-li"><i class="fas fa-check"></i></span>Kubernetes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="main special">
+            <header class="major">
+                <h2>PROJECTS</h2>
+            </header>
+            <h4>The following are projects that I have worked on. I have included links to the git repos and information on what each project entailed.</h4>
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-6">
+                    <span class="glyphicon glyphicon-off logo-small"></span>
+                    <h4>AU Lost & Found</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-6">
+                    <span class="glyphicon glyphicon-heart logo-small"></span>
+                    <h4>AU Sale Site</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+            <br><br>
+            <div class="row slideanim">
+                <div class="col-sm-6">
+                    <span class="glyphicon glyphicon-lock logo-small"></span>
+                    <h4>Lunch-For-4</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+                <div class="col-sm-6">
+                    <span class="glyphicon glyphicon-leaf logo-small"></span>
+                    <h4>LED Cube</h4>
+                    <p>Lorem ipsum dolor sit amet..</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume SECTION -->
+        <section id="resume" class="main special">
+            <header class="major">
+                <h2>RESUME</h2>
+            </header>
+            <iframe src="files/resume.pdf" width="100%" height="700px">
+            </iframe>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        })
+    </script>
+
+</body>
+
 </html>
